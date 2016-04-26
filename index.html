@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <!-- Viewport Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div style="text-align: center;">
+		<div  id="div1" style="text-align: center;">
+			<object data="headphone.svg" type="image/svg+xml" id="svg" width="40%" height="40%" class="headphone"></object>
+		</div>
+		<div id="div2" style="text-align: center;">
+			<object data="headphone512.svg" type="image/svg+xml" id="svg1" width="40%" height="40%" class="headphone512"></object>
+		</div>
+		<audio id="audio" src="GOT.mp3" autoplay></audio>
+		<br>
+		<font id="textStatus">Music is playing. Click to turn off the music.</font>
+	</div>
+	
+	<script>
+		var a = document.getElementById("svg");
+		var a1 = document.getElementById("svg1");
+		var audio = document.getElementById("audio");
+		
+		var playing = true;
+		var cross = false;
+		
+		a.addEventListener("load",function(){
+			var svgDoc = a.contentDocument;
+			r(svgDoc);
+		}, false);
+		
+		a1.addEventListener("load", function(){
+			var svgDoc = a1.contentDocument;
+			r(svgDoc);
+		}, false);
+		
+		function r(svgDoc){
+			/*svgDoc.getElementById("onOff").style.display="none";
+			svgDoc.getElementById("onOffTemp").style.display="none";*/
+			if(cross){
+				svgDoc.getElementById("onOff").style.display="block";
+				svgDoc.getElementById("onOffTemp").style.display="block";
+			}else{
+				svgDoc.getElementById("onOff").style.display="none";
+				svgDoc.getElementById("onOffTemp").style.display="none";
+			}
+			var delta = svgDoc.getElementById("headphoneStatus"); 
+
+			
+			delta.style.fill = "orangered";
+
+			delta.addEventListener("mousedown",function(){
+				if(playing){
+					svgDoc.getElementById("onOff").style.display="block";
+					svgDoc.getElementById("onOffTemp").style.display="block";
+					audio.pause();
+					document.getElementById("textStatus").innerHTML="Music is not playing. Click to turn on the music.";
+					playing=false;
+				}
+				else{
+					svgDoc.getElementById("onOff").style.display="none";
+					svgDoc.getElementById("onOffTemp").style.display="none";
+					audio.play();
+					document.getElementById("textStatus").innerHTML="Music is playing. Click to turn off the music.";
+					playing=true;
+				}
+				cross = cross?false:true;
+				
+			},false);
+
+			delta.addEventListener("mouseover", function(){
+				
+				if(playing){
+					svgDoc.getElementById("onOffTemp").style.display="block";
+				}
+				else{
+					svgDoc.getElementById("onOffTemp").style.display="none";
+					svgDoc.getElementById("onOff").style.display="none";
+				}
+			}, false);
+
+			delta.addEventListener("mouseleave", function(){
+				
+				if(playing){
+					svgDoc.getElementById("onOffTemp").style.display="none";
+				}
+				else{
+					svgDoc.getElementById("onOffTemp").style.display="block";
+				}
+			}, false);
+		}
+	</script>
+</body>
+</html>

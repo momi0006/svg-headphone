@@ -1,0 +1,21 @@
+#textStatus{
+	font-size: 2rem;
+	font-family: sans-serif;
+	color: orangered;
+}
+
+#div2{
+	display: none;
+}
+body{
+	background-color: yellowgreen;
+}
+
+@media all and (max-width: 1050px){
+	#div2{
+		display: block;
+	}
+	#div1{
+		display: none;
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g id="headphoneStatus">
+	<defs>
+		<filter id="filter" x="0" y="0">
+			<feGaussianBlur stdDeviation="0" />
+			<feOffset dx="0.5" dy="0.5" />
+		</filter>
+  </defs>
+	<g>
+		<path filter="url(#filter)" fill="black" d="M25.8,15.9C25.8,15.9,25.7,15.9,25.8,15.9l0-1c0-5.4-4.4-9.7-9.7-9.7s-9.7,4.4-9.7,9.7v1v10.6c0.6,0.2,1.2,0.3,1.8,0.3
+			c0.2,0,0.4,0,0.5,0v-4.5v-6.6h0.2c-0.1,0-0.1,0-0.2,0v-0.7c0-4.1,3.3-7.4,7.4-7.4c4.1,0,7.4,3.3,7.4,7.4v0.7c-0.1,0-0.2,0-0.2,0
+			h0.2v11.1c0.2,0,0.4,0,0.5,0c0.7,0,1.3-0.1,1.9-0.3L25.8,15.9L25.8,15.9z"/>
+		<path filter="url(#filter)" fill="black" d="M5,16.5c-1.5,1-2.5,2.7-2.5,4.7c0,2,1,3.7,2.5,4.7V16.5z"/>
+		<path filter="url(#filter)" fill="black" d="M27,16.6v9.3c1.5-1,2.5-2.7,2.5-4.7S28.5,17.6,27,16.6z"/>
+		<path d="M25.8,15.9C25.8,15.9,25.7,15.9,25.8,15.9l0-1c0-5.4-4.4-9.7-9.7-9.7s-9.7,4.4-9.7,9.7v1v10.6c0.6,0.2,1.2,0.3,1.8,0.3
+			c0.2,0,0.4,0,0.5,0v-4.5v-6.6h0.2c-0.1,0-0.1,0-0.2,0v-0.7c0-4.1,3.3-7.4,7.4-7.4c4.1,0,7.4,3.3,7.4,7.4v0.7c-0.1,0-0.2,0-0.2,0
+			h0.2v11.1c0.2,0,0.4,0,0.5,0c0.7,0,1.3-0.1,1.9-0.3L25.8,15.9L25.8,15.9z"/>
+		<path d="M5,16.5c-1.5,1-2.5,2.7-2.5,4.7c0,2,1,3.7,2.5,4.7V16.5z"/>
+		<path d="M27,16.6v9.3c1.5-1,2.5-2.7,2.5-4.7S28.5,17.6,27,16.6z"/>
+	</g>
+	<g>
+		<rect id="onOffTemp" x="15.3" y="-0.5" transform="matrix(0.6568 -0.7541 0.7541 0.6568 -7.2425 17.874)" width="1.4" height="34.7"/>
+		<rect id="onOff" x="15.3" y="-0.5" transform="matrix(0.6568 -0.7541 0.7541 0.6568 -7.2425 17.874)" width="1.4" height="34.7"/>
+	</g>
+</g>
+</svg>
